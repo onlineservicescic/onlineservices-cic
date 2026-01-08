@@ -1,0 +1,551 @@
+:root {
+    --bg: #fafafa;
+    --card: #fff;
+    --muted: #6b6b6b;
+    --gray: #f8f8f8;
+    --accent: #7a3ea6;
+    --blue: #53b5f7;
+    /* violet similaire */
+    --border: #dbdbdb;
+    --table-head: #f3f3f3;
+    --shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    border-bottom: 2px solid #414243;
+}
+.content-header{
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-menu{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.logo-text {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.menu {
+    background-color: #4d4d4d;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 2px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.breadcrumb {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.breadcrumb a {
+    color: #00478f;
+    text-decoration: none;
+}
+
+.account-info {
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    width: max-content;
+}
+
+.account-info a {
+    color: #00478f;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+p a {
+    color: #00478f;
+    text-decoration: none;
+}
+
+.messages {
+    margin-top: 20px;
+    font-size: 16px;
+}
+/* new */
+
+
+
+.container {
+    max-width: 1100px;
+    margin: 36px auto;
+    margin: none;
+    padding: 20px;
+}
+
+
+
+
+header h1 {
+    font-size: 28px;
+    margin: 6px 0 18px 0;
+    color: #222;
+    padding-bottom: 12px;
+}
+
+.notice {
+    background: #fff;
+    border-left: 4px solid var(--accent);
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    box-shadow: var(--shadow);
+}
+
+.notice a {
+    color: var(--accent);
+    text-decoration: underline
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes de largeur égale */
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 4px;
+}
+.head-card {
+    background: var(--gray);
+    border: 2px solid var(--border);
+    padding: 10px;
+    border-radius: 4px 4px 0px 0px;
+}
+.body-card {
+    background: var(--card);
+    border: 2px solid var(--border);
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.card h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.muted {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5
+}
+
+.muted strong {
+    color: #111
+}
+
+.info-list {
+    font-size: 14px;
+    line-height: 1.6
+}
+
+.info-list dt {
+    font-weight: 700;
+    margin-top: 8px
+}
+
+.info-list dd {
+    margin: 0 0 6px 0;
+    color: #222
+}
+
+/* messages table */
+.messages-title {
+    font-weight: 700;
+    margin: 12px 0;
+    font-size: 25px
+}
+
+.table-wrap {
+    overflow-x: auto;
+    background: transparent
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card);
+    border: 1px solid var(--border)
+}
+
+thead th {
+    background: var(--table-head);
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    border-left: 1px solid #dbdbdb;
+    font-weight: 700
+}
+
+tbody td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+    vertical-align: middle
+}
+
+tbody tr:hover {
+    background: #fbfbfb
+}
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+a.link {
+    color: var(--accent);
+    text-decoration: underline
+}
+
+.small {
+    font-size: 16px;
+    color: var(--muted)
+}
+
+.search-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px
+}
+
+.search-row input[type="text"] {
+    padding: 6px 8px;
+    border: 1.5px solid #c0c0c0;
+    border-radius: 3px
+}
+
+.meta-right {
+    font-size: 13px;
+    color: var(--muted);
+    text-align: right
+}
+
+.number-button,.feedback-button{
+    background-color: #0d4f7a;
+    color: #ffffff;
+    position: relative;
+    
+    padding: 7px 10px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: large;
+    border: none;
+}
+.number-button{
+    background-color: #0d4f7a;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+.feedback-button{
+    background-color: #d9d9d9;
+    color: #0d4f7a;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* responsive */
+@media (max-width:880px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .meta-right {
+        text-align: left;
+        margin-top: 8px
+    }
+}
+
+
+/* partie oubliée */
+.request-status {
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+}
+
+.request-status h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.request-status p {
+    color: #555;
+}
+
+.request-status ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.request-status li {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.request-status li strong {
+    color: #333;
+}
+/* partie oubliée */
+
+
+
+
+/* deux partie */
+.request-infos {
+    display: flex; /* Utiliser Flexbox pour aligner les éléments */
+    align-items: center; /* Centrer verticalement les éléments */
+    border-radius: 5px; /* Bords arrondis (optionnel) */
+    margin-top: 5px;
+}
+
+.request-infos .left {
+    display: flex; /* Utiliser Flexbox pour aligner l'icône et le texte */
+    flex-direction: column;
+}
+.request-infos .left .puce{
+    padding: 0px;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+}
+
+
+.request-infos .left i {
+    font-size: 18px; /* Taille de l'icône */
+    color: #3c3e43; /* Couleur de l'icône (vous pouvez remplacer par une couleur spécifique) */
+}
+.request-infos h4 {
+    margin: 0;
+    padding: 0;
+}
+.request-infos * {
+    margin: 0;
+    padding: 0;
+}
+
+
+.request-infos .right {
+    flex-grow: 1; /* Permet à la colonne droite de prendre tout l'espace disponible */
+    margin-left: 5px;
+}
+
+.request-infos .head {
+    display: flex; /* Utiliser Flexbox pour aligner le titre et l'icône de question */
+    align-items: center; /* Centrer verticalement */
+}
+
+.request-infos .title-head {
+    margin: 0; /* Supprimer les marges par défaut du h1 */
+    font-size: 18px; /* Taille du titre */
+    font-weight: bold; /* Gras */
+}
+
+.request-infos .head i {
+    margin-left: 10px; /* Espace entre le titre et l'icône de question */
+    font-size: 18px; /* Taille de l'icône de question */
+    color: #364c88; /* Couleur de l'icône (vous pouvez remplacer par une couleur spécifique) */
+}
+
+.request-infos .object {
+    margin: 5px 0 0; /* Espacement pour le texte "Sans objet" */
+    font-size: 14px; /* Taille du texte */
+    color: #666; /* Couleur du texte (optionnel) */
+}
+/* deux partie */
+
+
+
+
+
+
+/*popup*/
+
+/* Lien d'ouverture */
+#openModal {
+  color: #2563eb;             
+  text-decoration: underline;
+  cursor: pointer;
+}
+#openModal:hover {
+  color: #1e40af;              
+}
+
+/* Overlay (fond sombre) */
+#modalOverlay {
+  position: fixed;
+  inset: 0;                    
+  display: none;               
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.4); 
+  z-index: 9999;
+}
+
+#modalOverlay.active {
+  display: flex;
+}
+
+/* Conteneur du popup */
+#modalOverlay > div {
+  background-color: #ffffff;   
+  width: 650px;                
+  max-width: calc(100% - 32px); 
+  border-radius: 8px;           /* rounded */
+  box-shadow: 0 10px 25px rgba(2,6,23,0.2); /* shadow-lg */
+  position: relative;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* En-tête */
+#modalOverlay .header {
+  background-color: #0ea5e9;    /* bg-sky-700 approximé */
+  color: #ffffff;
+  padding: 12px 16px;           /* px-4 py-2 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Titre */
+#modalOverlay .header h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.0625rem;         /* text-lg */
+}
+
+/* Bouton fermer */
+#closeModal {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 1.25rem;           /* text-xl */
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 4px;
+}
+#closeModal:hover {
+  color: rgba(255,255,255,0.9); /* hover:text-gray-200 effect subtle */
+}
+
+/* Contenu (zone de tableau) */
+#modalOverlay .content {
+  padding: 16px;                /* p-4 */
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background: #fff;
+}
+
+/* Tableau global */
+#modalOverlay table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  color: #374151;               /* text-gray-700 */
+  font-size: 0.875rem;          /* text-sm */
+}
+
+/* En-têtes du tableau */
+#modalOverlay thead th {
+  text-align: left;
+  padding: 8px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  vertical-align: middle;
+  border-bottom: 1px solid rgba(0,0,0,0.08); /* border-b */
+}
+
+/* Lignes et cellules */
+#modalOverlay tbody td {
+  padding: 8px;
+  vertical-align: middle;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  color: #374151;               /* text-gray-700 */
+  font-size: 0.875rem;
+  white-space: normal;
+}
+
+/* Première colonne — style similaire aux autres mais tu peux ajuster */
+#modalOverlay td:first-child {
+  min-width: 110px;
+}
+
+/* Responsive: réduire la largeur sur petits écrans */
+@media (max-width: 480px) {
+  #modalOverlay > div {
+    width: 96%;
+    border-radius: 6px;
+  }
+  #modalOverlay thead th, #modalOverlay tbody td {
+    padding: 8px 6px;
+    font-size: 0.8125rem;
+  }
+}
+
+
+
+
+
+/* 
+.container-form{
+
+}
+.object{
+
+}
+.objet{
+    
+} */
